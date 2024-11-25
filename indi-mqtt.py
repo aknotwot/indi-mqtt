@@ -28,10 +28,10 @@ import argparse
 import random
 import string
 
-__author__ = 'Radek Kaczorek'
-__copyright__ = 'Copyright 2019-2020, Radek Kaczorek'
+__author__ = 'Radek Kaczorek - Arnaud Dupont'
+__copyright__ = 'Copyright 2019-2024, Radek Kaczorek'
 __license__ = 'GPL-3'
-__version__ = '1.0.6'
+__version__ = '1.1.0'
 
 # Default options
 LOG_LEVEL = logging.INFO
@@ -222,9 +222,13 @@ class IndiClient(PyIndi.BaseClient):
 		logger.info('Creating an instance of INDI client')
 	def newDevice(self, d):
 		pass
+	def removeDevice(self, d):
+		pass
 	def newProperty(self, p):
 		pass
 	def removeProperty(self, p):
+		pass
+	def updateProperty(self, p):
 		pass
 	def newBLOB(self, bp):
 		pass
